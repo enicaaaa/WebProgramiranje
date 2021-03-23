@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+head,body{
+    font-family: sans-serif;
+    background: url(image/bus.jpg) repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.kontFormaPodaci{
+    text-align: center;
+    font-size: larger;
+}
+
+.lab{
+    font-family: fantasy;
+    color:rgb(110, 18, 22);
+    margin: 10px;
+}
+
+.podaci{
+    font-size: larger;
+    font-family: fantasy;
+    color:rgb(60, 66, 74);
+}
+h1{
+    background-color: rgb(77, 87, 102);
+    font-family: fantasy;
+    text-align: center;
+    color:rgb(110, 18, 22);
+    margin: 0 0 20px 0;
+}
+.unosPodataka,.hedParkMesta{
+    margin:20px;
+    font-family: fantasy;
+    color: rgb(42, 49, 58);
+    align-items: center;
+}
+.labelaForma,.nivo{
+    font-family: fantasy;
+    color: rgb(42, 49, 58);
+    padding:2px;
+}
+.kontForma{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 15px;
+}
+.kontForma > h3{
+    text-align: center;
+}
+
+.razdeljak{
+    width: 10px;
+    height: 500px;
+    background-color: rgb(42, 49, 58);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.kontParkingMesta > h2{
+    text-align: center;
+}
+
+.parent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    border: solid 10px rgb(42, 49, 58);
+    margin: 10px 10px 50px 10px;
+
+}
+
+input{
+    border-radius: 15px;
+    background-color:whitesmoke;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top:6px;
+    padding-bottom: 6px;
+}
+.sat{
+    font-family: fantasy;
+    color: rgb(42, 49, 58);
+    padding: 20px;
+}
+.placanje{
+    padding: 15px;
+}
+.radio{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border:solid 10px rgb(42, 49, 58);
+}
+.dugmeParkiraj{
+    border-radius: 15px;
+    background-color: rgb(85, 102, 124);
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.dugmeParkiraj:hover{
+    margin: 2px;
+}
+.dugmeParkiraj:active{
+    background-color: rgb(110, 18, 22);
+}
+.kontParkingMesta{
+    display: flex;
+    flex-direction: column;
+    padding:10px;   
+}
+.mesto{
+    border: 5px solid rgb(42, 49, 58);
+    flex: 1 10px 10px;
+    padding: 20px;
+    margin: 4px;
+    text-align: center;
+    font-size:50px;
+    font-family: fantasy;
+    color: rgb(42, 49, 58);
+    cursor: pointer;
+}
+
+.mesto:hover{
+    margin: 2px;
+}
+.red{
+    display: flex;
+    flex-direction: row;
+    height: 20%;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.ime,.prezime {
+    text-transform: capitalize;
+}
+
+.tablice{
+    text-transform: uppercase;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+.close-button:hover {
+    background-color: darkgray;
+}
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
